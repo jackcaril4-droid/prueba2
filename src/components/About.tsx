@@ -15,11 +15,11 @@ export default function About() {
 
   const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3, ease: "easeOut" } },
   };
 
   return (
-    <section id="nosotros" className="relative py-32 w-full bg-white dark:bg-[#050505]">
+    <section id="nosotros" className="relative py-16 w-full bg-white dark:bg-[#050505]">
       {/* Background ambient glow */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="w-[50vw] h-[50vw] bg-santo-red/5 blur-[150px] rounded-full" />
@@ -43,7 +43,7 @@ export default function About() {
           {/* History Card (Large) */}
           <motion.div
             variants={itemVariants}
-            className="md:col-span-8 group relative p-8 md:p-12 rounded-3xl bg-zinc-50 dark:bg-white/[0.02] border border-zinc-200 dark:border-white/5 overflow-hidden hover:border-zinc-300 dark:hover:border-white/10 transition-colors duration-500"
+            className="md:col-span-8 group relative p-8 md:p-12 rounded-3xl bg-zinc-50 dark:bg-white/[0.02] border border-zinc-200 dark:border-white/5 overflow-hidden hover:border-zinc-300 dark:hover:border-white/10 transition-colors duration-200"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-zinc-10 dark:from-white/[0.02] to-transparent pointer-events-none" />
             <h3 className="text-3xl font-bold text-zinc-900 dark:text-white mb-6">El Origen</h3>
@@ -58,7 +58,7 @@ export default function About() {
           {/* Mission Card */}
           <motion.div
             variants={itemVariants}
-            className="md:col-span-4 p-8 md:p-12 rounded-3xl bg-santo-red/5 border border-santo-red/5 hover:border-santo-red/5 transition-colors duration-500 flex flex-col justify-center"
+            className="md:col-span-4 p-8 md:p-12 rounded-3xl bg-santo-red/5 border border-santo-red/5 hover:border-santo-red/5 transition-colors duration-200 flex flex-col justify-center"
           >
             <h3 className="text-sm font-semibold tracking-widest text-santo-red uppercase mb-4">
               Misión
@@ -71,7 +71,7 @@ export default function About() {
           {/* Vision Card */}
           <motion.div
             variants={itemVariants}
-            className="md:col-span-12 p-8 md:p-12 rounded-3xl bg-zinc-50 dark:bg-white/[0.02] border border-zinc-200 dark:border-white/5 hover:border-zinc-300 dark:hover:border-white/10 transition-colors duration-500 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8"
+            className="md:col-span-12 p-8 md:p-12 rounded-3xl bg-zinc-50 dark:bg-white/[0.02] border border-zinc-200 dark:border-white/5 hover:border-zinc-300 dark:hover:border-white/10 transition-colors duration-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8"
           >
             <div className="max-w-xl">
               <h3 className="text-sm font-semibold tracking-widest text-zinc-500 uppercase mb-4">

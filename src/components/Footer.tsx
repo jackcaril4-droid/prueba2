@@ -1,21 +1,22 @@
 import Link from "next/link";
 
 const NAV_LINKS = [
+  { name: "Deportivos", href: "#deportivos" },
+  { name: "Basketball", href: "#basketball" },
+  { name: "Fútbol", href: "#futbol" },
+  { name: "Catálogos", href: "#catalogos" },
   { name: "Nosotros", href: "#nosotros" },
-  { name: "Sneaker Drop", href: "#lanzamientos" },
-  { name: "Edición Limitada", href: "#catalogo" },
-  { name: "Catálogo", href: "#edicion-limitada" },
   { name: "Ubicación", href: "#ubicacion" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-zinc-50 dark:bg-[#050505] border-t border-zinc-200 dark:border-white/10 pt-20 pb-10">
+    <footer className="w-full bg-zinc-50 dark:bg-[#050505] border-t border-zinc-200 dark:border-white/10 pt-12 md:pt-20 pb-8 md:pb-10">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-10 md:mb-16">
 
           {/* Brand & Slogan */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 flex flex-col items-center md:items-start text-center md:text-left">
             <Link href="/" className="inline-block mb-6">
               <span className="text-3xl font-bold tracking-tighter text-zinc-900 dark:text-white uppercase flex items-center">
                 Santo<span className="text-santo-green">Sports</span>
@@ -27,9 +28,9 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="md:justify-self-end md:text-right">
-            <h4 className="text-zinc-900 dark:text-white font-bold uppercase tracking-widest text-sm mb-6">Explorar</h4>
-            <ul className="space-y-4">
+          <div className="text-center md:justify-self-end md:text-right flex flex-col items-center md:items-end">
+            <h4 className="text-zinc-900 dark:text-white font-bold uppercase tracking-widest text-sm mb-4 md:mb-6">Explorar</h4>
+            <ul className="space-y-4 md:space-y-4 flex flex-col items-center md:items-end">
               {NAV_LINKS.map((item) => (
                 <li key={item.name}>
                   <Link href={item.href} className="text-zinc-600 dark:text-zinc-400 hover:text-santo-red transition-colors">
@@ -45,13 +46,13 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-20 pt-8 border-t border-zinc-200 dark:border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-zinc-500 dark:text-zinc-600 text-sm">
+        <div className="mt-12 md:mt-20 pt-6 md:pt-8 border-t border-zinc-200 dark:border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-zinc-500 dark:text-zinc-600 text-sm text-center md:text-left">
             &copy; 2026 SantoSports. Todos los derechos reservados.
           </p>
 
           {/* Social Icons */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center justify-center gap-6">
             <a href="https://www.facebook.com/share/18TsbZ433v/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-zinc-500 hover:text-zinc-900 dark:hover:text-white hover:scale-110 transition-all">
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>

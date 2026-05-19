@@ -6,10 +6,11 @@ import ThemeToggle from "@/components/ThemeToggle";
 import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
+  { name: "Deportivos", href: "#deportivos" },
+  { name: "Basketball", href: "#basketball" },
+  { name: "Fútbol", href: "#futbol" },
+  { name: "Catálogos", href: "#catalogos" },
   { name: "Nosotros", href: "#nosotros" },
-  { name: "Sneaker Drop", href: "#lanzamientos" },
-  { name: "Edición Limitada", href: "#catalogo" },
-  { name: "Catálogo", href: "#edicion-limitada" },
   { name: "Ubicación", href: "#ubicacion" },
 ];
 
@@ -48,7 +49,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="hidden md:flex group relative px-6 py-2.5 overflow-hidden rounded-full bg-zinc-100 dark:bg-white/5 border border-zinc-200 dark:border-white/10 hover:border-zinc-300 dark:hover:border-white/30 transition-all duration-300"
           >
-            <div className="absolute inset-0 bg-zinc-200 dark:bg-white/5 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 ease-out"></div>
+            <div className="absolute inset-0 bg-zinc-200 dark:bg-white/5 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-200 ease-out"></div>
             <span className="relative text-sm font-medium text-zinc-900 dark:text-white tracking-wide">
               Contactar
             </span>

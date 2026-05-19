@@ -5,14 +5,14 @@ import { MapPin, Clock, Mail } from "lucide-react";
 
 export default function Location() {
   return (
-    <section id="ubicacion" className="relative py-32 w-full bg-white dark:bg-[#050505]">
+    <section id="ubicacion" className="relative py-16 w-full bg-white dark:bg-[#050505]">
       <div className="max-w-7xl mx-auto px-6">
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
           className="text-center mb-16"
         >
           <h2 className="text-[clamp(2rem,5vw,4rem)] font-bold tracking-tighter text-zinc-900 dark:text-white">
@@ -30,7 +30,7 @@ export default function Location() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
             className="lg:col-span-4 p-8 rounded-3xl bg-zinc-50 dark:bg-white/[0.02] border border-zinc-200 dark:border-white/5 flex flex-col justify-center space-y-10"
           >
             <div>
@@ -79,7 +79,7 @@ export default function Location() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.3, delay: 0.4 }}
             className="lg:col-span-8 rounded-3xl bg-zinc-50 dark:bg-white/[0.02] border border-zinc-200 dark:border-white/5 overflow-hidden aspect-video lg:aspect-auto flex items-center justify-center relative group"
           >
             <iframe
