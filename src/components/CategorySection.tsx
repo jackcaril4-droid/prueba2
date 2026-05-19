@@ -52,17 +52,18 @@ export default function CategorySection({ title, images, id }: CategorySectionPr
           <motion.div 
             key={index}
             variants={itemVariants}
-            className="group relative aspect-[4/5] overflow-hidden rounded-lg bg-zinc-100 dark:bg-zinc-900"
+            className="group relative aspect-[4/5] overflow-hidden rounded-lg bg-zinc-100 dark:bg-zinc-900 focus:outline-none"
+            tabIndex={0}
           >
             <Image
               src={src}
               alt={`${title} producto ${index + 1}`}
               fill
-              className="object-cover transition-transform duration-300 md:group-hover:scale-110"
+              className="object-cover transition-transform duration-300 group-hover:scale-110 group-focus:scale-110"
               sizes="(max-width: 768px) 50vw, 25vw"
             />
             {/* Overlay sutil al hacer hover */}
-            <div className="absolute inset-0 bg-black/0 transition-colors duration-300 md:group-hover:bg-black/20" />
+            <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/20 group-focus:bg-black/20" />
           </motion.div>
         ))}
       </motion.div>

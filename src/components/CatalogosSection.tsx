@@ -69,30 +69,31 @@ export default function CatalogosSection() {
           <motion.div 
             key={item.id}
             variants={itemVariants}
-            className="group relative aspect-[3/4] sm:aspect-square lg:aspect-[4/5] overflow-hidden rounded-2xl bg-zinc-100 dark:bg-zinc-900 cursor-pointer"
+            className="group relative aspect-[3/4] sm:aspect-square lg:aspect-[4/5] overflow-hidden rounded-2xl bg-zinc-100 dark:bg-zinc-900 cursor-pointer focus:outline-none"
+            tabIndex={0}
           >
             {/* Background Image */}
             <Image
               src={item.image}
               alt={item.name}
               fill
-              className="object-cover transition-transform duration-300 md:group-hover:scale-110"
+              className="object-cover transition-transform duration-300 group-hover:scale-110 group-focus:scale-110"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             />
             
             {/* Dark Gradient Overlay for contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent transition-colors duration-200 md:group-hover:from-black/90" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent transition-colors duration-200 group-hover:from-black/90 group-focus:from-black/90" />
             
             {/* Content overlay */}
             <div className="absolute inset-0 flex flex-col items-center justify-end p-6 md:p-8 text-center z-10">
-              <h3 className="text-2xl font-bold text-white mb-4 transform transition-transform duration-200 md:group-hover:-translate-y-2">
+              <h3 className="text-2xl font-bold text-white mb-4 transform transition-transform duration-200 group-hover:-translate-y-2 group-focus:-translate-y-2">
                 {item.name}
               </h3>
               
               {/* Button */}
               <Link 
                 href={`/catalogo/${item.name.toLowerCase().replace(/\s+/g, '-')}`}
-                className="px-6 py-2 rounded-full border border-white text-white text-sm font-medium tracking-wide uppercase transition-all duration-300 opacity-100 translate-y-0 md:opacity-0 md:translate-y-4 md:group-hover:opacity-100 md:group-hover:translate-y-0 hover:bg-white hover:text-black"
+                className="px-6 py-2 rounded-full border border-white text-white text-sm font-medium tracking-wide uppercase transition-all duration-300 opacity-0 translate-y-4 group-hover:opacity-100 group-focus:opacity-100 group-hover:translate-y-0 group-focus:translate-y-0 hover:bg-white hover:text-black"
               >
                 Ver más
               </Link>
