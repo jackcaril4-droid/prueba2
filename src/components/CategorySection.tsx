@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 
 interface CategorySectionProps {
@@ -57,11 +58,11 @@ export default function CategorySection({ title, images, id }: CategorySectionPr
               src={src}
               alt={`${title} producto ${index + 1}`}
               fill
-              className="object-cover transition-transform duration-300 group-hover:scale-110"
+              className="object-cover transition-transform duration-300 md:group-hover:scale-110"
               sizes="(max-width: 768px) 50vw, 25vw"
             />
             {/* Overlay sutil al hacer hover */}
-            <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/20" />
+            <div className="absolute inset-0 bg-black/0 transition-colors duration-300 md:group-hover:bg-black/20" />
           </motion.div>
         ))}
       </motion.div>
@@ -73,9 +74,12 @@ export default function CategorySection({ title, images, id }: CategorySectionPr
         viewport={{ once: false, margin: "-100px" }}
         transition={{ duration: 0.3, delay: 0.4, ease: "easeOut" }}
       >
-        <button className="px-8 py-3 rounded-full border-2 border-zinc-900 dark:border-white text-zinc-900 dark:text-white font-medium text-sm tracking-wider uppercase transition-all duration-300 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-black">
+        <Link 
+          href={`/catalogo/${title.toLowerCase().replace(/\s+/g, '-')}`}
+          className="px-8 py-3 rounded-full border-2 border-zinc-900 dark:border-white text-zinc-900 dark:text-white font-medium text-sm tracking-wider uppercase transition-all duration-300 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-black"
+        >
           Ver más
-        </button>
+        </Link>
       </motion.div>
     </section>
   );
