@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Santo Sports",
   description: "Tú eres más!.",
+  icons: {
+    icon: "/logo1.png",
+  },
 };
 
 export default function RootLayout({

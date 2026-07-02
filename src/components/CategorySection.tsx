@@ -52,7 +52,7 @@ export default function CategorySection({ title, images, id }: CategorySectionPr
           <motion.div 
             key={index}
             variants={itemVariants}
-            className="group relative aspect-[4/5] overflow-hidden rounded-lg bg-zinc-100 dark:bg-zinc-900 focus:outline-none"
+            className="group relative aspect-square overflow-hidden rounded-lg bg-zinc-100 dark:bg-zinc-900 focus:outline-none"
             tabIndex={0}
           >
             <Image
@@ -76,9 +76,15 @@ export default function CategorySection({ title, images, id }: CategorySectionPr
         transition={{ duration: 0.3, delay: 0.4, ease: "easeOut" }}
       >
         <Link 
-          href={id === "deportivos" ? "/NEW%20BALANCE%20V4.0.pdf" : `/catalogo/${title.toLowerCase().replace(/\s+/g, '-')}`}
-          target={id === "deportivos" ? "_blank" : undefined}
-          rel={id === "deportivos" ? "noopener noreferrer" : undefined}
+          href={
+            id === "deportivos" || id === "futbol" 
+              ? "/categorias/deportivos" 
+              : id === "basketball" 
+              ? "/BASQUET 7.0.pdf" 
+              : `/catalogo/${title.toLowerCase().replace(/\s+/g, '-')}`
+          }
+          target={id === "basketball" ? "_blank" : undefined}
+          rel={id === "basketball" ? "noopener noreferrer" : undefined}
           className="px-8 py-3 rounded-full border-2 border-zinc-900 dark:border-white text-zinc-900 dark:text-white font-medium text-sm tracking-wider uppercase transition-all duration-300 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-black"
         >
           Ver más

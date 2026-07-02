@@ -1,12 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const NAV_LINKS = [
-  { name: "Deportivos", href: "#deportivos" },
-  { name: "Basketball", href: "#basketball" },
-  { name: "Fútbol", href: "#futbol" },
-  { name: "Catálogos", href: "#catalogos" },
-  { name: "Nosotros", href: "#nosotros" },
-  { name: "Ubicación", href: "#ubicacion" },
+  { name: "Deportivos", href: "/#deportivos" },
+  { name: "Basketball", href: "/#basketball" },
+  { name: "Fútbol", href: "/#futbol" },
+  { name: "Catálogos", href: "/#catalogos" },
+  { name: "Nosotros", href: "/#nosotros" },
+  { name: "Ubicación", href: "/#ubicacion" },
 ];
 
 export default function Footer() {
@@ -18,9 +19,13 @@ export default function Footer() {
           {/* Brand & Slogan */}
           <div className="md:col-span-2 flex flex-col items-center md:items-start text-center md:text-left">
             <Link href="/" className="inline-block mb-6">
-              <span className="text-3xl font-bold tracking-tighter text-zinc-900 dark:text-white uppercase flex items-center">
-                Santo<span className="text-santo-green">Sports</span>
-              </span>
+              <Image
+                src="/logo1.png"
+                alt="Santo Sports"
+                width={300}
+                height={96}
+                className="h-24 w-auto object-contain dark:brightness-200"
+              />
             </Link>
             <p className="text-zinc-600 dark:text-zinc-500 max-w-sm text-lg leading-relaxed">
               Desde el centro del mundo, para tus pies.
@@ -70,7 +75,7 @@ export default function Footer() {
                 <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
               </svg>
             </a>
-            <a href="https://wa.me/593963768074" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="text-zinc-500 hover:text-zinc-900 dark:hover:text-white hover:scale-110 transition-all">
+            <a href="https://wa.me/593963768074?text=%C2%A1Hola!%20Vengo%20de%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="text-zinc-500 hover:text-zinc-900 dark:hover:text-white hover:scale-110 transition-all">
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
               </svg>

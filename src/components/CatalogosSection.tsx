@@ -1,29 +1,28 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 
 const CATALOGOS = [
   {
     id: 1,
     name: "Accesorios",
-    image: "https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?q=80&w=1000&auto=format&fit=crop",
+    image: "/Accesorios.png",
   },
   {
     id: 2,
     name: "Camisetas deportivas",
-    image: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=1000&auto=format&fit=crop",
+    image: "/Camiseta.png",
   },
   {
     id: 3,
     name: "Mochilas",
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=1000&auto=format&fit=crop",
+    image: "/Mochila.png",
   },
   {
     id: 4,
     name: "Balones",
-    image: "https://images.unsplash.com/photo-1614632537197-38a17061c2bd?q=80&w=1000&auto=format&fit=crop",
+    image: "/Balon.jpeg",
   },
 ];
 
@@ -69,7 +68,7 @@ export default function CatalogosSection() {
           <motion.div 
             key={item.id}
             variants={itemVariants}
-            className="group relative aspect-[3/4] sm:aspect-square lg:aspect-[4/5] overflow-hidden rounded-2xl bg-zinc-100 dark:bg-zinc-900 cursor-pointer focus:outline-none"
+            className="group relative aspect-square overflow-hidden rounded-2xl bg-zinc-100 dark:bg-zinc-900 cursor-pointer focus:outline-none"
             tabIndex={0}
           >
             {/* Background Image */}
@@ -91,12 +90,14 @@ export default function CatalogosSection() {
               </h3>
               
               {/* Button */}
-              <Link 
-                href={`/catalogo/${item.name.toLowerCase().replace(/\s+/g, '-')}`}
+              <a 
+                href={`https://wa.me/593963768074?text=${encodeURIComponent(`¡Hola! Vengo de su página web y me gustaría recibir el catálogo de ${item.name}.`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-2 rounded-full border border-white text-white text-sm font-medium tracking-wide uppercase transition-all duration-300 opacity-0 translate-y-4 group-hover:opacity-100 group-focus:opacity-100 group-hover:translate-y-0 group-focus:translate-y-0 hover:bg-white hover:text-black"
               >
                 Ver más
-              </Link>
+              </a>
             </div>
           </motion.div>
         ))}

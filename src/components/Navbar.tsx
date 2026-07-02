@@ -2,16 +2,17 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
 import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
-  { name: "Deportivos", href: "#deportivos" },
-  { name: "Basketball", href: "#basketball" },
-  { name: "Fútbol", href: "#futbol" },
-  { name: "Catálogos", href: "#catalogos" },
-  { name: "Nosotros", href: "#nosotros" },
-  { name: "Ubicación", href: "#ubicacion" },
+  { name: "Deportivos", href: "/#deportivos" },
+  { name: "Basketball", href: "/#basketball" },
+  { name: "Fútbol", href: "/#futbol" },
+  { name: "Catálogos", href: "/#catalogos" },
+  { name: "Nosotros", href: "/#nosotros" },
+  { name: "Ubicación", href: "/#ubicacion" },
 ];
 
 export default function Navbar() {
@@ -22,9 +23,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <span className="text-2xl font-bold tracking-tighter text-zinc-900 dark:text-white uppercase flex items-center">
-            Santo<span className="text-santo-green">Sports</span>
-          </span>
+          <Image
+            src="/logo1.png"
+            alt="Santo Sports"
+            width={200}
+            height={64}
+            className="h-16 w-auto object-contain dark:brightness-200"
+            priority
+          />
         </Link>
 
         {/* Center Links - Desktop */}
@@ -44,7 +50,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <ThemeToggle />
           <a
-            href="https://wa.me/593963768074"
+            href="https://wa.me/593963768074?text=%C2%A1Hola!%20Vengo%20de%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos."
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex group relative px-6 py-2.5 overflow-hidden rounded-full bg-zinc-100 dark:bg-white/5 border border-zinc-200 dark:border-white/10 hover:border-zinc-300 dark:hover:border-white/30 transition-all duration-300"
@@ -79,7 +85,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://wa.me/593963768074"
+            href="https://wa.me/593963768074?text=%C2%A1Hola!%20Vengo%20de%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos."
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
