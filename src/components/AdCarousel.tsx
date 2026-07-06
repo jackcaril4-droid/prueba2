@@ -8,17 +8,16 @@ import Image from "next/image";
 const images = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=2070&auto=format&fit=crop",
+    src: "/Poster3.png",
+    mobileSrc: "/PosterCelular1.4.png",
     alt: "Nueva Colección Streetwear",
-    title: "NUEVA COLECCIÓN",
-    subtitle: "Descubre las últimas tendencias",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2000&auto=format&fit=crop",
+    src: "/Poster11.png",
     alt: "Estilo Urbano Femenino",
-    title: "ESTILO URBANO",
-    subtitle: "Ropa diseñada para destacar",
+    title: "Reebok Classic",
+    subtitle: "Estilo que nunca pasa de moda",
   },
   {
     id: 3,
@@ -92,6 +91,7 @@ export default function AdCarousel() {
           }}
           className="absolute inset-0 w-full h-full"
         >
+
           {/* Overlay gradient for better text readability */}
           <div className="absolute inset-0 bg-black/40 z-10" />
           
@@ -100,8 +100,17 @@ export default function AdCarousel() {
             alt={images[currentIndex].alt}
             fill
             priority
-            className="object-cover"
+            className={`object-cover ${images[currentIndex].mobileSrc ? 'hidden md:block' : ''}`}
           />
+          {images[currentIndex].mobileSrc && (
+            <Image
+              src={images[currentIndex].mobileSrc}
+              alt={images[currentIndex].alt}
+              fill
+              priority
+              className="object-cover block md:hidden"
+            />
+          )}
           
           <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
             <motion.h2 

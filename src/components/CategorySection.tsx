@@ -77,14 +77,16 @@ export default function CategorySection({ title, images, id }: CategorySectionPr
       >
         <Link 
           href={
-            id === "deportivos" || id === "futbol" 
+            id === "deportivos"
               ? "/categorias/deportivos" 
+              : id === "futbol"
+              ? "/FUTBOL V1.0.pdf"
               : id === "basketball" 
               ? "/BASQUET 7.0.pdf" 
               : `/catalogo/${title.toLowerCase().replace(/\s+/g, '-')}`
           }
-          target={id === "basketball" ? "_blank" : undefined}
-          rel={id === "basketball" ? "noopener noreferrer" : undefined}
+          target={id === "futbol" || id === "basketball" ? "_blank" : undefined}
+          rel={id === "futbol" || id === "basketball" ? "noopener noreferrer" : undefined}
           className="px-8 py-3 rounded-full border-2 border-zinc-900 dark:border-white text-zinc-900 dark:text-white font-medium text-sm tracking-wider uppercase transition-all duration-300 hover:bg-zinc-900 hover:text-white dark:hover:bg-white dark:hover:text-black"
         >
           Ver más
