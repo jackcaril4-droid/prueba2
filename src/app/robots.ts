@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://santosports.com/sitemap.xml",
+    sitemap: "https://santosports.store/sitemap.xml",
   };
 }

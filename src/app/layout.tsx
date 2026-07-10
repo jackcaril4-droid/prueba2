@@ -49,14 +49,14 @@ export const metadata: Metadata = {
     icon: "/logo1.png",
     apple: "/logo1.png",
   },
-  metadataBase: new URL("https://santosports.com"),
+  metadataBase: new URL("https://santosports.store"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "es_EC",
-    url: "https://santosports.com",
+    url: "https://santosports.store",
     siteName: "Santo Sports",
     title: "Santo Sports | Calzado Deportivo en Santo Domingo – La Tierrita",
     description:
@@ -102,9 +102,9 @@ const jsonLd = {
   alternateName: ["SantoSports", "Santo Sports Ecuador", "La Tierrita Santo Sports"],
   description:
     "Tienda de calzado deportivo en Santo Domingo de los Tsáchilas, Ecuador. Marcas como Nike, Adidas, New Balance, Skechers y más.",
-  url: "https://santosports.com",
-  logo: "https://santosports.com/logo1.png",
-  image: "https://santosports.com/logo1.png",
+  url: "https://santosports.store",
+  logo: "https://santosports.store/logo1.png",
+  image: "https://santosports.store/logo1.png",
   telephone: "+593963768074",
   email: "santo_sports@hotmail.com",
   address: {
