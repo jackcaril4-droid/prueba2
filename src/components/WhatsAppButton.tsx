@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
       transition={{ delay: 1, duration: 0.5, type: "spring", stiffness: 200 }}
     >
       <a
-        href="https://wa.me/593963768074?text=%C2%A1Hola!%20Vengo%20de%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos."
+        href="https://wa.me/593982801929?text=%C2%A1Hola!%20Vengo%20de%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos."
         target="_blank"
         rel="noopener noreferrer"
         className="relative group flex items-center justify-center w-16 h-16 bg-[#25D366] text-white rounded-full shadow-[0_0_20px_rgba(37,211,102,0.5)] hover:shadow-[0_0_30px_rgba(37,211,102,0.8)] transition-all duration-300"

@@ -91,7 +91,7 @@ export default function CatalogosSection() {
               
               {/* Button */}
               <a 
-                href={`https://wa.me/593963768074?text=${encodeURIComponent(`¡Hola! Vengo de su página web y me gustaría recibir el catálogo de ${item.name}.`)}`}
+                href={`https://wa.me/593982801929?text=${encodeURIComponent(`¡Hola! Vengo de su página web y me gustaría recibir el catálogo de ${item.name}.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-2 rounded-full border border-white text-white text-sm font-medium tracking-wide uppercase transition-all duration-300 opacity-0 translate-y-4 group-hover:opacity-100 group-focus:opacity-100 group-hover:translate-y-0 group-focus:translate-y-0 hover:bg-white hover:text-black"
