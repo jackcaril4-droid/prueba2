@@ -12,37 +12,37 @@ const BRANDS = [
     id: "adidas",
     name: "Adidas",
     image: "/Adidas.png",
-    pdfUrl: "/ADIDAS V1.0.pdf",
+    pdfUrl: "/ADIDAS V2.0.pdf",
   },
   {
     id: "nike",
     name: "Nike",
     image: "/Nike.png",
-    pdfUrl: "/NIKE V1.0.pdf",
+    pdfUrl: "/NIKE V2.0.pdf",
   },
   {
     id: "skechers",
     name: "Skechers",
     image: "/Skechers.png",
-    pdfUrl: "/SKECHERS V1.0.pdf",
+    pdfUrl: "/SKECHERS V2.0.pdf",
   },
   {
     id: "new-balance",
     name: "New Balance",
     image: "/NewBalance.png",
-    pdfUrl: "/NEW BALANCE V4.0.pdf",
+    pdfUrl: "/NEW BALANCE V2.0.pdf",
   },
   {
     id: "new-athletic",
     name: "New Athletic",
     image: "/NewAtletic.png",
-    pdfUrl: "/NEW ATHLETIC V1.0.pdf",
+    pdfUrl: "/NEW ATHLETIC V2.0.pdf",
   },
   {
     id: "deportivos-otras-marcas",
     name: "Otras Marcas",
     image: "/OtrasMarcas.png",
-    pdfUrl: "/OTRAS MARCAS V1.0.pdf",
+    pdfUrl: "/OTRAS MARCAS V2.0.pdf",
   },
 ];
 

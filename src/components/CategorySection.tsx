@@ -80,9 +80,9 @@ export default function CategorySection({ title, images, id }: CategorySectionPr
             id === "deportivos"
               ? "/categorias/deportivos" 
               : id === "futbol"
-              ? "/FUTBOL V1.0.pdf"
+              ? "/FUTBOL V2.0.pdf"
               : id === "basketball" 
-              ? "/BASQUET 7.0.pdf" 
+              ? "/BASQUET V2.0.pdf" 
               : `/catalogo/${title.toLowerCase().replace(/\s+/g, '-')}`
           }
           target={id === "futbol" || id === "basketball" ? "_blank" : undefined}
