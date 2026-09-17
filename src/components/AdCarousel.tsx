@@ -14,15 +14,15 @@ const images = [
   },
   {
     id: 2,
-    src: "/Poster11.png",
+    src: "/POSTER2.1.jpg",
     alt: "Estilo Urbano Femenino",
     title: "Reebok Classic",
     subtitle: "Estilo que nunca pasa de moda",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop",
-    alt: "Tienda Exclusiva",
+    src: "/POSTER3.jpg",
+    alt: "Zapatilla",
     title: "EXCLUSIVIDAD",
     subtitle: "Ediciones limitadas solo para ti",
   },
