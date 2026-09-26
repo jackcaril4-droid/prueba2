@@ -6,7 +6,7 @@ import { motion, Variants } from "framer-motion";
 const CATALOGOS = [
   {
     id: 1,
-    name: "Accesorios",
+    name: "Gorras",
     image: "/Accesorios.png",
   },
   {
