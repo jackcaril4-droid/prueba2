@@ -8,19 +8,24 @@ import Image from "next/image";
 const images = [
   {
     id: 1,
+    src: "/PosterPrincipal.webp",
+    alt: "Santo Sports - ¡Te esperamos!",
+  },
+  {
+    id: 2,
     src: "/Poster3.webp",
     mobileSrc: "/PosterCelular1.4.jpg",
     alt: "Nueva Colección Streetwear",
   },
   {
-    id: 2,
+    id: 3,
     src: "/POSTER2.1.webp",
     alt: "Estilo Urbano Femenino",
     title: "Reebok Classic",
     subtitle: "Estilo que nunca pasa de moda",
   },
   {
-    id: 3,
+    id: 4,
     src: "/POSTER3.webp",
     alt: "Zapatilla",
     title: "EXCLUSIVIDAD",
@@ -112,24 +117,30 @@ export default function AdCarousel() {
             />
           )}
           
-          <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
-            <motion.h2 
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="text-4xl md:text-7xl font-bold text-white tracking-tighter uppercase mb-4"
-            >
-              {images[currentIndex].title}
-            </motion.h2>
-            <motion.p 
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              className="text-lg md:text-2xl text-zinc-200"
-            >
-              {images[currentIndex].subtitle}
-            </motion.p>
-          </div>
+          {(images[currentIndex].title || images[currentIndex].subtitle) && (
+            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
+              {images[currentIndex].title && (
+                <motion.h2 
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.3 }}
+                  className="text-4xl md:text-7xl font-bold text-white tracking-tighter uppercase mb-4"
+                >
+                  {images[currentIndex].title}
+                </motion.h2>
+              )}
+              {images[currentIndex].subtitle && (
+                <motion.p 
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.4 }}
+                  className="text-lg md:text-2xl text-zinc-200"
+                >
+                  {images[currentIndex].subtitle}
+                </motion.p>
+              )}
+            </div>
+          )}
         </motion.div>
       </AnimatePresence>
 
