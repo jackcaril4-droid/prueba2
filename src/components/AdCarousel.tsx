@@ -8,20 +8,20 @@ import Image from "next/image";
 const images = [
   {
     id: 1,
-    src: "/Poster3.png",
-    mobileSrc: "/PosterCelular1.4.png",
+    src: "/Poster3.webp",
+    mobileSrc: "/PosterCelular1.4.jpg",
     alt: "Nueva Colección Streetwear",
   },
   {
     id: 2,
-    src: "/POSTER2.1.jpg",
+    src: "/POSTER2.1.webp",
     alt: "Estilo Urbano Femenino",
     title: "Reebok Classic",
     subtitle: "Estilo que nunca pasa de moda",
   },
   {
     id: 3,
-    src: "/POSTER3.jpg",
+    src: "/POSTER3.webp",
     alt: "Zapatilla",
     title: "EXCLUSIVIDAD",
     subtitle: "Ediciones limitadas solo para ti",

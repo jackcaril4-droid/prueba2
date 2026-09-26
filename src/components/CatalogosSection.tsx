@@ -12,17 +12,17 @@ const CATALOGOS = [
   {
     id: 2,
     name: "Camisetas deportivas",
-    image: "/Camiseta.png",
+    image: "/Camiseta.webp",
   },
   {
     id: 3,
     name: "Mochilas",
-    image: "/Mochila.png",
+    image: "/Mochila.webp",
   },
   {
     id: 4,
     name: "Balones",
-    image: "/Balon.jpeg",
+    image: "/Balon.jpg",
   },
 ];
 

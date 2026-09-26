@@ -46,8 +46,8 @@ export const metadata: Metadata = {
   creator: "Santo Sports",
   publisher: "Santo Sports",
   icons: {
-    icon: "/logo1.png",
-    apple: "/logo1.png",
+    icon: "/logo1.webp",
+    apple: "/logo1.webp",
   },
   metadataBase: new URL("https://santosports.store"),
   alternates: {
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Tu tienda de calzado deportivo en Santo Domingo, Ecuador. Nike, Adidas, New Balance, Skechers y más marcas. Visítanos en la tierrita. ¡Tú eres más!",
     images: [
       {
-        url: "/logo1.png",
+        url: "/logo1.webp",
         width: 1200,
         height: 630,
         alt: "Santo Sports – Calzado Deportivo en Santo Domingo",
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     title: "Santo Sports | Calzado Deportivo en Santo Domingo",
     description:
       "Tu tienda de calzado deportivo en Santo Domingo, Ecuador. Nike, Adidas, New Balance y más. ¡Tú eres más!",
-    images: ["/logo1.png"],
+    images: ["/logo1.webp"],
   },
   robots: {
     index: true,
@@ -103,8 +103,8 @@ const jsonLd = {
   description:
     "Tienda de calzado deportivo en Santo Domingo de los Tsáchilas, Ecuador. Marcas como Nike, Adidas, New Balance, Skechers y más.",
   url: "https://santosports.store",
-  logo: "https://santosports.store/logo1.png",
-  image: "https://santosports.store/logo1.png",
+  logo: "https://santosports.store/logo1.webp",
+  image: "https://santosports.store/logo1.webp",
   telephone: "+593963768074",
   email: "santo_sports@hotmail.com",
   address: {

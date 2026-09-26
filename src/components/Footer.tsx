@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="md:col-span-2 flex flex-col items-center md:items-start text-center md:text-left">
             <Link href="/" className="inline-block mb-6">
               <Image
-                src="/logo1.png"
+                src="/logo1.webp"
                 alt="Santo Sports"
                 width={300}
                 height={96}

@@ -8,24 +8,24 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const deportivosImages = [
-  "/Deportivo11.png",
-  "/Deportivo2.png",
-  "/Deportivo33.png",
-  "/Deportivo4.png"
+  "/Deportivo11.webp",
+  "/Deportivo2.webp",
+  "/Deportivo33.webp",
+  "/Deportivo4.webp"
 ];
 
 const basketballImages = [
-  "/Basket1.png",
-  "/Basket2.png",
-  "/Basket3.png",
-  "/Basket4.png"
+  "/Basket1.webp",
+  "/Basket2.webp",
+  "/Basket3.webp",
+  "/Basket4.webp"
 ];
 
 const futbolImages = [
-  "/Futbol1.1.png",
-  "/Futbol2.1.png",
-  "/Futbol3.1.png",
-  "/Futbol4.1.png"
+  "/Futbol1.1.webp",
+  "/Futbol2.1.webp",
+  "/Futbol3.1.webp",
+  "/Futbol4.1.webp"
 ];
 
 export default function Home() {
