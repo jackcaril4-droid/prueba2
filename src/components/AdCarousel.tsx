@@ -21,7 +21,7 @@ const images = [
   },
   {
     id: 3,
-    src: "/POSTER3.webp",
+    src: "/Poster3.webp",
     alt: "Zapatilla",
     title: "EXCLUSIVIDAD",
     subtitle: "Ediciones limitadas solo para ti",
