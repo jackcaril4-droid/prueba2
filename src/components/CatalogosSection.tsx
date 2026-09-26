@@ -7,7 +7,7 @@ const CATALOGOS = [
   {
     id: 1,
     name: "Gorras",
-    image: "/Accesorios.png",
+    image: "/Gorras.webp",
   },
   {
     id: 2,
