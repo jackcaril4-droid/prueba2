@@ -8,7 +8,7 @@ import Image from "next/image";
 const images = [
   {
     id: 1,
-    src: "/Poster3.webp",
+    src: "/Poster3.1.webp",
     mobileSrc: "/PosterCelular1.4.jpg",
     alt: "Nueva Colección Streetwear",
   },
